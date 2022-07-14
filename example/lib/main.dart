@@ -1,5 +1,6 @@
 import 'package:custom_components_flutter/FilterModel.dart';
 import 'package:custom_components_flutter/custom_dropdown.dart';
+import 'package:custom_components_flutter/Filterchip.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -108,6 +109,15 @@ class _MyHomePageState extends State<MyHomePage> {
               dropdownList: [DropDownModel(value: "hello", id: "1")],
               updateselectedItem: (updateselectedItem) => {
                 print(updateselectedItem),
+              },
+            ),
+            CustomChips(
+              chipList: [
+                CustomsChipsModel("John", "1", false),
+                CustomsChipsModel("Mary", "2", false)
+              ],
+              updatedChips: (List<CustomsChipsModel> updatedChips) {
+                print(updatedChips);
               },
             ),
           ],
