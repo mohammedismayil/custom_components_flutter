@@ -1,3 +1,5 @@
+import 'package:custom_components_flutter/CustomBoxList.dart';
+import 'package:custom_components_flutter/CustomCheckBoxes.dart';
 import 'package:custom_components_flutter/FilterModel.dart';
 import 'package:custom_components_flutter/custom_dropdown.dart';
 import 'package:custom_components_flutter/Filterchip.dart';
@@ -120,15 +122,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(updatedChips);
               },
             ),
-            CustomDropdown(
-              dropdownList: [
-                DropDownModel(value: "Redmi", id: "1"),
-                DropDownModel(value: "Realme", id: "3"),
-                DropDownModel(value: "Oppo", id: "2")
+            CustomCheckBoxes(
+              checklist: [
+                ChecklistModel(false, "Redmi"),
+                ChecklistModel(false, "Oppo")
               ],
-              updateselectedItem: (updateselectedItem) =>
-                  {print(updateselectedItem)},
-            )
+              updateCheckList: (updatedCheckList) => {print(updatedCheckList)},
+            ),
+           
           ],
         ),
       ),

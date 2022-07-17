@@ -1,6 +1,6 @@
 name: custom_components_flutter
 description: A collection of customised reusable components.
-version: 0.0.3-e
+version: 0.0.4
 homepage: https://github.com/mohammedismayil/custom_components_flutter
 
 environment:
