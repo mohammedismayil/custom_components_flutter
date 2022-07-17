@@ -4,3 +4,6 @@
 ## 0.0.2 - 14July,2022
 
 * Custom chips added
+## 0.0.3 - 17July,2022
+
+* Custom checkbox,seekbar,rangebar has been added
