@@ -120,6 +120,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(updatedChips);
               },
             ),
+            CustomDropdown(
+              dropdownList: [
+                DropDownModel(value: "Redmi", id: "1"),
+                DropDownModel(value: "Realme", id: "3"),
+                DropDownModel(value: "Oppo", id: "2")
+              ],
+              updateselectedItem: (updateselectedItem) =>
+                  {print(updateselectedItem)},
+            )
           ],
         ),
       ),
